@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Documentation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav id="navbar">
+    <header>HTML Documentation</header>
+    <ul>
+      <li><a href="#HTML_Introduction" class="nav-link">HTML Introduction</a></li>
+      <li><a href="#HTML_Editors" class="nav-link">HTML Editors</a></li>
+      <li><a href="#HTML_Basic" class="nav-link">HTML Basic</a></li>
+      <li><a href="#HTML_Elements" class="nav-link">HTML Elements</a></li>
+      <li><a href="#HTML_Attributes" class="nav-link">HTML Attributes</a></li>
+      <li><a href="#HTML_Headings" class="nav-link">HTML Headings</a></li>
+      <li><a href="#HTML_Paragraphs" class="nav-link">HTML Paragraphs</a></li>
+      <li><a href="#HTML_Styles" class="nav-link">HTML Styles</a></li>
+      <li><a href="#HTML_Formatting" class="nav-link">HTML Formatting</a></li>
+      <li><a href="#HTML_Quotations" class="nav-link">HTML Quotations</a></li>
+      <li><a href="#HTML_Comments" class="nav-link">HTML Comments</a></li>
+      <li><a href="#HTML_Colors" class="nav-link">HTML Colors</a></li>
+      <li><a href="#HTML_CSS" class="nav-link">HTML CSS</a></li>
+      <li><a href="#HTML_Links" class="nav-link">HTML Links</a></li>
+      <li><a href="#HTML_Images" class="nav-link">HTML Images</a></li>
+      <li><a href="#Reference" class="nav-link">Reference</a></li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="HTML_Introduction">
+      <header>HTML Introduction</header>
+      <article>
+        <p>Html is the standard markup language for creating Web pages.
+        <p>
+        <p>What is HTML?</p>
+        <p>
+        <ul>
+          <li>HTML stands for Hyper Text Markup Language</li>
+          <li>HTML is the standard markup language for creating Web pages</li>
+          <li>HTML describes the structure of a Web page</li>
+          <li>HTML consists of a series of elements</li>
+          <li>HTML elements tell the browser how to display the content</li>
+          <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a
+            link", etc</li>
+        </ul>
+        </p>
+        <p>A Simple HTML Document</p>
+        <code>
+
+        &lt;!DocType html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+        &lt;title&gt; Page title &lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;h1&gt;My first page Heading &lt;/h1&gt;
+        &lt;p&gt;My first paragraph.&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+     </code>
+        <h3>Example Explained</h3>
+        <ul>
+          <li>The <span>&lt;!DOCTYPE html&gt;</span> declaration defines that this document is an HTML5 document</li>
+          <li>The <span>&lt;html&gt;</span> element is the root element of an HTML page</li>
+          <li>The <span>&lt;head&gt;</span> element contains meta information about the HTML page</li>
+          <li>The <span>&lt;title&gt;</span> element specifies a title for the HTML page (which is shown in the
+            browser's title bar or in the page's tab)</li>
+          <li>The <span>&lt;body&gt;</span> element defines the document's body, and is a container for all the visible
+            contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</li>
+          <li>The <span>&lt;h1&gt;</span> element defines a large heading</li>
+          <li>The <span>&lt;p&gt;</span> element defines a paragraph</li>
+        </ul>
+      </article>
+    </section>
+    <section class="main-section" id="HTML_Editors">
+      <header>HTML Editors</header>
+      <article>
+        <p>A simple text editor is all you need to learn HTML.</p>
+        <h3>Learn HTML Using Notepad or TextEdit</h3>
+        <p>Web pages can be created and modified by using professional HTML editors.
+          However, for learning HTML we recommend a simple text editor like Notepad (PC) or TextEdit (Mac).
+
+          We believe that using a simple text editor is a good way to learn HTML.
+
+          Follow the steps below to create your first web page with Notepad or TextEdit.</p>
+      </article>
+    </section>
+    <section class="main-section" id="HTML_Basic">
+      <header>HTML Basic</header>
+      <article>
+        <p>In this chapter we will show some basic HTML examples.Don't worry if we use tags you have not learned about
+          yet.</p>
+        <h3>HTML Documents</h3>
+        <p>All HTML documents must start with a document type declaration: <span>&lt;!DOCTYPE html&gt;</span>.</p>
+        <p>The HTML document itself begins with <span>&lt;html&gt;</span> and ends with <span>&lt;/html&gt;</span>.</p>
+        <p>The visible part of the HTML document is between <span>&lt;body&gt;</span> and <span>&lt;/body&gt;</span></p>
+        <h3>Example</h3>
+        <code>
+
+        &lt;!DocType html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+        &lt;title&gt; Page title &lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;h1&gt;My first page Heading &lt;/h1&gt;
+        &lt;p&gt;My first paragraph.&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    
+    </code>
+      </article>
+    </section>
+    <section class="main-section" id="HTML_Elements">
+      <header>HTML Elements</header>
+      <article>
+        <p>An Html element is defined by a start tag, some content, and an end tag.</p>
+        <h3>HTML Elements</h3>
+        <p>The HTML <b>element</b> is everything from the start tag to the end tag:
+          &lt;<span>tagname</span>&gt;<b>Content
+            goes here....</b> &lt;<span>/tagname</span>&gt;</p>
+        <p>Examples of some HTML elements:</p>
+        <code>
+        &lt;h1&gt;My first page Heading &lt;/h1&gt;
+        &lt;p&gt;My first paragraph.&lt;/p&gt;
+    </code>
+        <p>Some HTML elements have no content (like the &lt;br&gt; element). These elements are called empty
+          elements.Empty elements do not have an end tag!</p>
+        <p>HTML elements can be nested (this means that elements can contain other elements). All HTML documents consist
+          of nested HTML elements.</p>
+      </article>
+    </section>
+    <section class="main-section" id="HTML_Attributes">
+      <header>HTML Attributes</header>
+      <article>
+        <p>HTML attributes provide additional information about HTML elements.All HTML elements can have attributes.
+          Attributes are always specified in <b>the start tag</b>. Attributes usually come in name/value pairs like:
+          <b>name="value"</b>
+        </p>
+        <h3>The href Attribute</h3>
+        <p>The <span>&lt;a&gt;</span> tag defines a hyperlink. The <span>href</span> attributes specifies the URL of the
+          page the link goes to: </p>
+        <code>
+      &lt;a href="https://www.w3schools.com"&gt;Visit W3Schools&lt;/a&gt;
+    </code>
+      </article>
+    </section>
+    <section class="main-section" id="HTML_Headings">
+      <header>HTML Headings</header>
+      <article>
+        <p>HTML headings are titles or subtitles that you want to display on a webpage. HTML headings are defined with
+          the
+          <span>&lt;h1&gt;</span> to <span>&lt;h6&gt;</span>
+        </p>
+        <p><span>&lt;h1&gt;</span> defines the most important heading. <span>&lt;h6&gt;</span> defines the least
+          important
+          heading.</p>
+        <code>
+
+        &lt;h1&gt;Heading 1 &lt;/h1&gt;
+        &lt;h2&gt;Heading 2 &lt;/h2&gt;
+        &lt;h3&gt;Heading 3 &lt;/h3&gt;
+        &lt;h4&gt;Heading 4 &lt;/h4&gt;
+        &lt;h5&gt;Heading 5 &lt;/h5&gt;
+        &lt;h6&gt;Heading 6 &lt;/h6&gt;
+    </code>
+        <p>Headings are important:</p>
+        <ul>
+          <li>Search engines use the headings to index the structure and content of your web pages.</li>
+          <li>Users often skim a page by its headings. It is important to use headings to show the document structure.
+          </li>
+        </ul>
+      </article>
+    </section>
+    <section class="main-section" id="HTML_Paragraphs">
+      <header>HTML Paragraphs</header>
+      <article>
+        <p>The HTML <span>&lt;p&gt;</span> element defines a paragraph. A paragraph always starts on a new line, and is
+          usually a block of text. Browsers automatically add some white space (a margin) before and after a paragraph.
+        </p>
+        <code>
+            &lt;p&gt;This is a paragraph.&lt;/p&gt;
+            &lt;p&gt;This is another paragraph.&lt;/p&gt;
+        </code>
+        <p>You cannot be sure how HTML will be displayed. Large or small screens, and resized windows will create
+          different results.
+
+          With HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code.
+
+          The browser will automatically remove any extra spaces and lines when the page is displayed:</p>
+      </article>
+    </section>
+    <section class="main-section" id="HTML_Styles">
+      <header>HTML Styles</header>
+      <article>
+        <p>The HTML <span>style</span> attribute is used to add styles to an element, such as color, font, size, and
+          more.</p>
+        <p>Setting the style of an HTML element, can be done with the <span>&lt;style&gt;</span> attribute. The HTML
+          <span>&lt;style&gt;</span> attribute has the following syntax:
+        </p>
+        <code>
+        &lt;tagname style="property:value;"&gt;
+       </code>
+        <p>The <b>property</b> is a CSS property. The <b>value</b> is a CSS value.</p>
+      </article>
+    </section>
+    <section class="main-section" id="HTML_Formatting">
+      <header>HTML Formatting</header>
+      <article>
+        <p>HTML contains several elements for defining text with a special meaning.</p>
+        <p>Formatting elements were designed to display special types of text:</p>
+        <ul>
+          <li><span>&lt;b&gt;</span> Bold text</li>
+          <li><span>&lt;strong&gt;</span> Important text</li>
+          <li><span>&lt;i&gt;</span> Italic text</li>
+          <li><span>&lt;em&gt;</span> Emphasized text</li>
+          <li><span>&lt;mark&gt;</span> Marked text</li>
+          <li><span>&lt;small&gt;</span> Smaller text</li>
+          <li><span>&lt;del&gt;</span> Deleted text</li>
+          <li><span>&lt;ins&gt;</span> Inserted text</li>
+          <li><span>&lt;sub&gt;</span> Subscript text</li>
+          <li><span>&lt;sup&gt;</span> Superscript text</li>
+        </ul>
+      </article>
+    </section>
+    <section class="main-section" id="HTML_Quotations">
+      <header>HTML Quotations</header>
+      <article>
+        <p>In this chapter we will go through the <span>&lt;blockquote&gt;</span>, <span>&lt;q&gt;</span>,
+          <span>&lt;abbr&gt;</span>, <span>&lt;address&gt;</span>, <span>&lt;cite&gt;</span> and
+          <span>&lt;bdo&gt;</span> HTML elements.
+        </p>
+        <p>The HTML <span>&lt;blockquote&gt;</span> element defines a section that is quoted from another source.
+          Browsers usually indent <span>&lt;blockquote&gt;</span> elements.</p>
+        <code>
+            &lt;p&gt; Here is a quote from WWF's website:&lt;/p&gt;
+            
+            &lt;blockquote cite="http://www.worldwildlife.org/who/index.html"&gt;
+            For 60 years, WWF has worked to help people and nature thrive.
+            As the world's leading conservation organization, WWF works in nearly 100 countries. 
+            At every level, we collaborate with people around the world to develop
+            and deliver innovative solutions that protect communities, wildlife, 
+            and the places in which they live.
+            &lt;/blockquote&gt;
+        </code>
+      </article>
+    </section>
+    <section class="main-section" id="HTML_Comments">
+      <header>HTML Comments</header>
+      <article>
+        <p>HTML comments are not displayed in the browser, but they can help document your HTML source code. You can add
+          comments to your HTML source by using the following syntax:</p>
+        <code>
+        <span>&lt;!--Write your comments here--&gt;</span>
+       </code>
+        <p>Notice that there is an exclamation point (!) in the start tag, but not in the end tag.</p>
+      </article>
+    </section>
+    <section class="main-section" id="HTML_Colors">
+      <header>HTML Colors</header>
+      <article>
+        <p>HTML colors are specified with predefined color names, or with RGB, HEX, HSL, RGBA, or HSLA values.
+        </p>
+        <p>In HTML, a color can be specified using a color name:</p>
+        <ul>
+          <li>Tomato</li>
+          <li>Orange</li>
+          <li>DodgerBlue</li>
+          <li>MediumSeaGreen</li>
+          <li>Gray</li>
+        </ul>
+        <p>You can set the background color for HTML elements. You can also set the color of text</p>
+      </article>
+    </section>
+    <section class="main-section" id="HTML_CSS">
+      <header>HTML CSS</header>
+      <article>
+        <h3>What is CSS?</h3>
+        <p>CSS stands for Cascading Style Sheets. CSS saves a lot of work. It can control the layout of multiple web
+          pages all at once. Cascading Style Sheets (CSS) is used to format the layout of a webpage. With CSS, you can
+          control the color, font, the size of text, the spacing between elements, how elements are positioned and laid
+          out, what background images or background colors are to be used, different displays for different devices and
+          screen sizes, and much more!</p>
+        <h3>Using CSS</h3>
+        <p>CSS can be added to HTML documents in 3 ways:</p>
+        <ul>
+          <li><b>Inline</b>- by using the <span>&lt;style&gt;</span> attribute inside HTML elements</li>
+          <li><b>Internal</b>- by using <span>&lt;style&gt;</span> element in the <span>&lt;section&gt;</span>section
+          </li>
+          <li><b>External</b>- by using a <span>&lt;link&gt;</span> element to link to an external CSS file</li>
+        </ul>
+        <p>The most common way to add CSS, is to keep the styles in external CSS files. However, in this tutorial we
+          will use inline and internal styles, because this is easier to demonstrate, and easier for you to try it
+          yourself.</p>
+      </article>
+    </section>
+    <section class="main-section" id="HTML_Links">
+      <header>HTML Links</header>
+      <article>
+        <p>Links are found in nearly all web pages. Links allow users to click their way from page to page.</p>
+        <h3>HTML Links - Hyperlinks</h3>
+        <p>HTML links are hyperlinks. You can click on a link and jump to another document. When you move the mouse over
+          a link, the mouse arrow will turn into a little hand.</p>
+        <h3>HTML Links - Syntax</h3>
+        <p>The HTML <span>&lt;a&gt;</span> tag defines a hyperlink. It has the following syntax:</p>
+        <code>
+          &lt;a href="url"&gt;link text&lt;/a&gt;
+        </code>
+        <p>The most important attribute of the <span>&lt;a&gt;</span> element is the <span>&lt;href&gt;</span>
+          attribute, which indicates the link's destination.The link text is the part that will be visible to the
+          reader. Clicking on the link text, will send the reader to the specified URL address.</p>
+      </article>
+    </section>
+    <section class="main-section" id="HTML_Images">
+      <header>HTML Images</header>
+      <article>
+        <p>Images can improve the design and the appearance of a web page.</p>
+        <h3>HTML Image Syntax</h3>
+        <p>The HTML <span>&lt;img&gt;</span> tag is used to embed an image in web page.</p>
+        <p>Images are not technically inserted into a web page; images linked to web pages. The <span>&lt;img&gt;</span>
+          tag creates a holding space for the referenced image.</p>
+        <p>The <span>&lt;img&gt;</span> tag is empty, it contains attributes only, and does not have a closing tag.</p>
+        <p>The <span>&lt;img&gt;</span> tag has two required attributes:</p>
+        <ul>
+          <li>src- Specifies the path to the image</li>
+          <li>alt- Specifies an alternate text for the image.</li>
+        </ul>
+        <code>
+          &lt;img src="url" alt="alternate text"&gt;
+        </code>
+        <p>The <span>src</span> attributes specifies the path (URL) to the image.</p>
+      </article>
+    </section>
+    <section class="main-section" id="Reference">
+      <header>Reference</header>
+      <ul>
+        <li>All the documentation in this page is taken from <a href="https://www.w3schools.com/"><b>W3schools</b></a>
+        </li>
+      </ul>
+    </section>
+  </main>
+</body>
+
+</html>
